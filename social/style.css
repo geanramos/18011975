@@ -1,0 +1,29 @@
+.fa-brands {
+    display: inline-block;
+    width: 20px; /* Tamanho do ícone */
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1); /* Deixa os ícones brancos no fundo escuro */
+}
+
+.fa-facebook {
+    background-image: url('https://geanramos.com.br/social/facebook-brands-solid.svg');
+}
+
+.fa-twitter {
+    background-image: url('https://geanramos.com.br/social/twitter-brands-solid.svg');
+}
+
+.fa-telegram {
+    background-image: url('https://geanramos.com.br/social/telegram-brands-solid.svg');
+}
+
+.fa-whatsapp {
+    background-image: url('https://geanramos.com.br/social/whatsapp-brands-solid.svg');
+}
+
+.fa-bluesky {
+    background-image: url('https://geanramos.com.br/social/bluesky-brands-solid.svg');
+}
