@@ -1,3 +1,4 @@
+/* https://fontawesome.com/search */
 .fa-brands {
     display: inline-block;
     width: 20px; /* Tamanho do ícone */
@@ -9,21 +10,41 @@
 }
 
 .fa-facebook {
-    background-image: url('https://geanramos.com.br/social/facebook-brands-solid.svg');
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/facebook-brands-solid.svg');
 }
 
 .fa-twitter {
-    background-image: url('https://geanramos.com.br/social/twitter-brands-solid.svg');
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/twitter-brands-solid.svg');
 }
 
 .fa-telegram {
-    background-image: url('https://geanramos.com.br/social/telegram-brands-solid.svg');
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/telegram-brands-solid.svg');
 }
 
 .fa-whatsapp {
-    background-image: url('https://geanramos.com.br/social/whatsapp-brands-solid.svg');
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/whatsapp-brands-solid.svg');
 }
 
 .fa-bluesky {
-    background-image: url('https://geanramos.com.br/social/bluesky-brands-solid.svg');
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/bluesky-brands-solid.svg');
+}
+
+.fa-wordpress {
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/wordpress-brands-solid.svg');
+}
+
+.fa-blogger {
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/blogger-brands-solid.svg');
+}
+
+.fa-website {
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/globe-solid.svg');
+}
+
+.fa-github {
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/github-brands-solid.svg');
+}
+
+.fa-joomla {
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/joomla-brands-solid.svg');
 }
