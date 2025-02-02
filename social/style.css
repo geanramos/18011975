@@ -21,6 +21,10 @@
     background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/telegram-brands-solid.svg');
 }
 
+.fa-telegram2 {
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/telegram2-brands-solid.svg');
+}
+
 .fa-whatsapp {
     background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/whatsapp-brands-solid.svg');
 }
@@ -53,6 +57,26 @@
     background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/instagram-brands-solid.svg');
 }
 
+.fa-threads {
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/threads-brands-solid.svg');
+}
+
+.fa-pix {
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/pix.svg');
+}
+
 .fa-youtube {
     background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/youtube-brands-solid.svg');
+}
+
+.fa-gean {
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/kagi.svg');
+}
+
+.fa-el2 {
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/gradle.svg');
+}
+
+.fa-cafe {
+    background-image: url('https://cdn.jsdelivr.net/gh/geanramos/18011975/social/mug-hot-solid.svg');
 }
