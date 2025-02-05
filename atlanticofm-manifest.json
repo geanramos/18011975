@@ -1,0 +1,22 @@
+{
+  "name": "Atlântico FM",
+  "short_name": "AtlFM",
+  "description": "Rádio Atlântico FM - A Radio mais feleiz da cidade.",
+  "start_url": "https://geanramos.com.br/atlanticofm.html",
+  "display": "standalone",
+  "background_color": "#0074bd",
+  "theme_color": "#3367D6",
+  "icons": [
+    {
+      "src": "https://i1.wp.com/geanramos.com.br/radio/img/logo-atlanticofm.png?resize=192,192",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i1.wp.com/geanramos.com.br/radio/img/logo-atlanticofm.png?resize=512,512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
++'
