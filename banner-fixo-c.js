@@ -96,4 +96,4 @@ scriptElement.parentNode.insertBefore(mostrarBannerAleatorio(), scriptElement);
 setInterval(() => {
     const adsBannerDiv = mostrarBannerAleatorio();
     scriptElement.parentNode.replaceChild(adsBannerDiv, document.querySelector('.ads-banner'));
-}, 10000); // Troca de banner a cada 10000 milissegundos (10 segundos)
+}, 100000); // Troca de banner a cada 10000 milissegundos (10 segundos)
