@@ -2,8 +2,8 @@
 const style = document.createElement('style');
 style.innerHTML = `
     .ads-banner {
-        width: 100%; /* Largura do banner */
-        height: 100%; /* Altura do banner */
+        width: 360px; /* Largura do banner */
+        height: 90px; /* Altura do banner */
         background-color: transparent; /* Fundo transparente */
     }
 
@@ -11,7 +11,7 @@ style.innerHTML = `
         width: 100%; /* Faz a imagem ocupar todo o espaço disponível */
         height: 100%; /* Faz a imagem ocupar toda a altura do banner */
         display: block; /* Elimina o espaço em branco abaixo da imagem */
-        border-radius: 4px;
+        border-radius: 5px;
     }
 `;
 document.head.appendChild(style);
@@ -81,7 +81,7 @@ function mostrarBannerAleatorio() {
     // Adiciona o ads-banner com o link no HTML
     adsBannerDiv.innerHTML = `
         <a href="${links[indice]}" target="_blank" class="ads-banner">
-            <img src="${imagens[indice]}" alt="ads">
+            <img src="${imagens[indice]}" alt="ads" style="border-radius: 4px; display: block; margin: 0 auto;">
         </a>
     `;
 
