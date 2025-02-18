@@ -17,7 +17,7 @@ style.innerHTML = `
     }
 
     .ads-banner img {
-        width: 100%;
+        max-width: 500px;
         height: 100%;
         display: block;
         border-radius: 4px;
@@ -90,7 +90,7 @@ function mostrarBannerAleatorio() {
     // Adiciona o ads-banner com o link no HTML
     adsBannerDiv.innerHTML = `
         <a href="${links[indice]}" target="_blank" class="ads-banner">
-            <img src="${imagens[indice]}" alt="ads">
+            <img src="${imagens[indice]}" alt="Banner" style="border-radius: 4px; display: block; margin: 0 auto;">>
         </a>
     `;
 
