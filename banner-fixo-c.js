@@ -2,8 +2,8 @@
 const style = document.createElement('style');
 style.innerHTML = `
     .ads-banner {
-        max-width: 500px; /* Largura do banner */
-        max-height: 125px; /* Altura do banner */
+        width: 100%; /* Largura do banner */
+        height: 100%; /* Altura do banner */
         background-color: transparent; /* Fundo transparente */
     }
 
@@ -11,7 +11,7 @@ style.innerHTML = `
         width: 100%; /* Faz a imagem ocupar todo o espaço disponível */
         height: 100%; /* Faz a imagem ocupar toda a altura do banner */
         display: block; /* Elimina o espaço em branco abaixo da imagem */
-        border-radius: 5px;
+        border-radius: 4px;
     }
 `;
 document.head.appendChild(style);
