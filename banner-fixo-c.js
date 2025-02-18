@@ -11,8 +11,8 @@ style.innerHTML = `
     }
 
     .ads-banner {
-        width: 500px; /* Largura do banner */
-        height: 125px; /* Altura do banner */
+        max-width: 500px; /* Largura do banner */
+        max-height: 125px; /* Altura do banner */
         background-color: transparent;
     }
 
