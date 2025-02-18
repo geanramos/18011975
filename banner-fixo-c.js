@@ -1,19 +1,18 @@
-javascript
 // Adiciona os estilos CSS dinamicamente ao documento
 const style = document.createElement('style');
 style.innerHTML = `
     .ads-container {
         display: flex;
         justify-content: center; /* Centraliza horizontalmente */
-        align-items: center; /* Mantém alinhado */
+        align-items: center; /* Centraliza verticalmente (se necessário) */
         width: 100%;
         height: auto;
-        margin-top: 20px; /* Espaçamento superior opcional */
+        margin-top: 20px; /* Espaço opcional acima do banner */
     }
 
     .ads-banner {
-        max-width: 500px; /* Largura do banner */
-        max-height: 125px; /* Altura do banner */
+        width: 500px; /* Largura do banner */
+        height: 125px; /* Altura do banner */
         background-color: transparent;
     }
 
@@ -40,6 +39,18 @@ const imagens = [
     "https://i1.wp.com/geanramos.com.br/radio/img/features8.jpg",
     "https://i1.wp.com/geanramos.com.br/radio/img/features9.jpg",
     "https://i1.wp.com/geanramos.com.br/radio/img/features10.jpg",
+    "https://i1.wp.com/geanramos.com.br/radio/img/pisadinha.jpg",
+    "https://i1.wp.com/geanramos.com.br/radio/img/tropical.jpg",
+    "https://i1.wp.com/geanramos.com.br/radio/img/pop2k.jpg",
+    "https://i1.wp.com/geanramos.com.br/radio/img/lo-fi.jpg",
+    "https://i1.wp.com/geanramos.com.br/radio/img/megamix.jpg",
+    "https://i1.wp.com/geanramos.com.br/radio/img/boteco.jpg",
+    "https://i1.wp.com/geanramos.com.br/radio/img/ads-profissao-afiliado.jpg",
+    "https://i1.wp.com/geanramos.com.br/radio/img/ads-profissao-afiliado2.jpg",
+    "https://i1.wp.com/geanramos.com.br/radio/img/ads-profissao-afiliado3.jpg",
+    "https://i1.wp.com/geanramos.com.br/radio/img/ads-profissao-afiliado4.jpg",
+    "https://i1.wp.com/geanramos.com.br/radio/img/ads-profissao-afiliado5.jpg",
+    "https://i1.wp.com/geanramos.com.br/radio/img/ads-profissao-afiliado6.jpg",
 ];
 
 // Array de URLs dos links correspondentes
@@ -56,14 +67,27 @@ const links = [
     "https://geanramos.42web.io/radio/libbel.html",
     "https://geanramos.42web.io/radio/libmusic.html",
     "https://geanramos.42web.io/radio/mixfm.html",
+    "https://geanramos.42web.io/radio/pisadinha.html",
+    "https://geanramos.42web.io/radio/tropical.html",
+    "https://geanramos.42web.io/radio/pop2k.html",
+    "https://geanramos.42web.io/radio/lofi.html",
+    "https://geanramos.42web.io/radio/megamix.html",
+    "https://geanramos.42web.io/radio/boteco.html",
+    "https://geanramos.com.br/ig/",
+    "https://geanramos.com.br/ig/",
+    "https://go.hotmart.com/A1939024g?ap=06c5&src=radio",
+    "https://go.hotmart.com/A1939024g?ap=06c5&src=radio",
+    "https://go.hotmart.com/A1939024g?ap=0fbe&src=radio",
+    "https://go.hotmart.com/A1939024g?ap=0fbe&src=radio",
 ];
 
 // Função para exibir um ads-banner aleatório
 function mostrarBannerAleatorio() {
-    const indice = Math.floor(Math.random() * imagens.length);
+    const indice = Math.floor(Math.random() * imagens.length); // Gera um índice aleatório
     const adsBannerDiv = document.createElement('div');
     adsBannerDiv.className = 'ads-banner';
 
+    // Adiciona o ads-banner com o link no HTML
     adsBannerDiv.innerHTML = `
         <a href="${links[indice]}" target="_blank" class="ads-banner">
             <img src="${imagens[indice]}" alt="ads">
@@ -73,17 +97,12 @@ function mostrarBannerAleatorio() {
     return adsBannerDiv;
 }
 
-// Localiza o script e insere o banner no mesmo local do script
+// Insere o banner onde o script é chamado
 const scriptElement = document.currentScript;
-const adsContainer = document.createElement('div');
-adsContainer.className = 'ads-container';
-scriptElement.parentNode.insertBefore(adsContainer, scriptElement.nextSibling);
-
-const banner = mostrarBannerAleatorio();
-adsContainer.appendChild(banner);
+scriptElement.parentNode.insertBefore(mostrarBannerAleatorio(), scriptElement);
 
 // Função para trocar o banner a cada 10 segundos
 setInterval(() => {
-    const novoBanner = mostrarBannerAleatorio();
-    adsContainer.replaceChild(novoBanner, document.querySelector('.ads-banner'));
-}, 10000);
+    const adsBannerDiv = mostrarBannerAleatorio();
+    scriptElement.parentNode.replaceChild(adsBannerDiv, document.querySelector('.ads-banner'));
+}, 10000); // Troca de banner a cada 10000 milissegundos (10 segundos)
