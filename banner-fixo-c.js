@@ -80,9 +80,9 @@ function mostrarBannerAleatorio() {
 
     // Adiciona o ads-banner com o link no HTML
     adsBannerDiv.innerHTML = `
-        <a href="${links[indice]}" target="_blank" class="ads-banner">
+        <center><a href="${links[indice]}" target="_blank" class="ads-banner">
             <img src="${imagens[indice]}" alt="ads" style="border-radius: 4px; display: block; margin: 0 auto;">
-        </a>
+        </a></center>
     `;
 
     return adsBannerDiv;
