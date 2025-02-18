@@ -1,26 +1,17 @@
 // Adiciona os estilos CSS dinamicamente ao documento
 const style = document.createElement('style');
 style.innerHTML = `
-    .ads-container {
-        display: flex;
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: center; /* Centraliza verticalmente (se necessário) */
-        width: 100%;
-        height: auto;
-        margin-top: 20px; /* Espaço opcional acima do banner */
-    }
-
     .ads-banner {
         max-width: 500px; /* Largura do banner */
         max-height: 125px; /* Altura do banner */
-        background-color: transparent;
+        background-color: transparent; /* Fundo transparente */
     }
 
     .ads-banner img {
-        max-width: 500px;
-        height: 100%;
-        display: block;
-        border-radius: 4px;
+        width: 100%; /* Faz a imagem ocupar todo o espaço disponível */
+        height: 100%; /* Faz a imagem ocupar toda a altura do banner */
+        display: block; /* Elimina o espaço em branco abaixo da imagem */
+        border-radius: 5px;
     }
 `;
 document.head.appendChild(style);
@@ -90,7 +81,7 @@ function mostrarBannerAleatorio() {
     // Adiciona o ads-banner com o link no HTML
     adsBannerDiv.innerHTML = `
         <a href="${links[indice]}" target="_blank" class="ads-banner">
-            <img src="${imagens[indice]}" alt="Banner" style="border-radius: 4px; display: block; margin: 0 auto;">>
+            <img src="${imagens[indice]}" alt="ads">
         </a>
     `;
 
