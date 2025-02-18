@@ -2,8 +2,8 @@
 const style = document.createElement('style');
 style.innerHTML = `
     .ads-banner {
-        width: 360px; /* Largura do banner */
-        height: 90px; /* Altura do banner */
+        width: 500px; /* Largura do banner */
+        height: 125px; /* Altura do banner */
         background-color: transparent; /* Fundo transparente */
     }
 
