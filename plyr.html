@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Plyr</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
+    <style>
+        /* Estilos Globais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Estilos de Resposta */
+        .player {
+            width: 100%;
+            max-width: 550px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos de Vídeo e Áudio */
+        video, audio {
+            width: 100%;
+        }
+
+        /* Estilos Responsivos */
+        @media (max-width: 550px) {
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo de Plyr</h1>
+
+    <!-- YouTube Player -->
+    <div class="player">
+        <div class="plyr__video-embed" id="player-youtube">
+            <iframe
+                src="https://www.youtube.com/embed/o6xSHpTrUvg"
+                allowfullscreen
+                allow="autoplay"
+            ></iframe>
+        </div>
+    </div>
+
+    <!-- Vimeo Player -->
+    <div class="player">
+        <div class="plyr__video-embed" id="player-vimeo">
+            <iframe
+                src="https://player.vimeo.com/video/74213286"
+                allowfullscreen
+                allow="autoplay"
+            ></iframe>
+        </div>
+    </div>
+
+    <!-- Local Video Player -->
+    <div class="player">
+        <video id="player-local" controls poster="https://cdn.jsdelivr.net/gh/geanramos/18011975/img/minions2_trailer.jpg">
+            <source src="https://www.universalpics.com.br/tl_files/content/hero/minions2_trailer.mp4?https://cdn.jsdelivr.net/gh/geanramos/18011975/img/minions2_trailer.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+    </div>
+
+    <!-- Audio Player -->
+    <div class="player">
+        <audio id="player-audio" controls>
+            <source src="https://cdn.jsdelivr.net/gh/geanramos/18011975/img/ymca-despicable-me.mp3" type="audio/mpeg">
+            Seu navegador não suporta a tag de áudio.
+        </audio>
+    </div>
+
+    <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
+    <script>
+        // Initialize Plyr
+        const players = Plyr.setup('.plyr__video-embed, video, audio');
+    </script>
+</body>
+</html>
