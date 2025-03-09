@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo de Plyr</title>
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css">
     <style>
         /* Estilos Globais */
         body {
@@ -42,12 +42,59 @@
                 padding: 10px;
             }
         }
+        
+/* Plyr Audio Player - Fundo personalizado */
+.plyr--audio {
+    background-color: #008A3C;
+}
+
+/* Ajustes adicionais para a interface do player */
+.plyr--audio .plyr__controls {
+    background-color: #008A3C;
+}
+
+
+.plyr--audio .plyr__controls input {
+    color: #fff;
+}
+
+.plyr--audio .plyr__progress input {
+    background-color: #008A3C;
+}
+
+.plyr--audio .plyr__volume input {
+    background-color: #008A3C;
+}
+
+.plyr--audio .plyr__control:hover,
+.plyr--audio .plyr__control[aria-expanded=true] {
+  background:#00b3ff;
+  background:var(--plyr-audio-control-background-hover,var(--plyr-color-main,var(--plyr-color-main,#01A247)));
+  color:#fff;
+  color:var(--plyr-audio-control-color-hover,#fff);
+}
+.plyr--audio .plyr__controls {
+
+  color:#4a5464;
+  color:var(--plyr-audio-control-color,#fff);
+}
+ .plyr {
+  border-radius: 5px;
+}
     </style>
 </head>
 <body>
 
     <h1>Exemplo de Plyr</h1>
-
+    
+    <!-- Audio Player -->
+    <div class="player">
+        <audio id="player-audio" controls>
+            <source src="https://tisha.geanramos.com.br/audio/2025-03-08-lula-trump-alimentos-caros-agro-pix-p1.mp3" type="audio/mpeg">
+            Seu navegador não suporta áudio.
+        </audio>
+    </div>
+    
     <!-- YouTube Player -->
     <div class="player">
         <div class="plyr__video-embed" id="player-youtube">
@@ -78,18 +125,9 @@
         </video>
     </div>
 
-    <!-- Audio Player -->
-    <div class="player">
-        <audio id="player-audio" controls>
-            <source src="https://cdn.jsdelivr.net/gh/geanramos/18011975/img/ymca-despicable-me.mp3" type="audio/mpeg">
-            Seu navegador não suporta a tag de áudio.
-        </audio>
-    </div>
 
-    <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
-    <script>
-        // Initialize Plyr
-        const players = Plyr.setup('.plyr__video-embed, video, audio');
-    </script>
+    <script src="https://cdn.plyr.io/3.6.12/plyr.polyfilled.js"></script>
+    <script> const players = Plyr.setup('.plyr__video-embed, video, audio'); </script>
+
 </body>
 </html>
