@@ -25,12 +25,12 @@ if (isset($_REQUEST['url']) && $_REQUEST['url'] != 'https://') {
 <title>gean.me – O n&atilde;o-encurtador de links</title>
 
 <link rel="shortcut icon" type="image/png" href="https://geanramos.com.br/favicon.png" />
-<link rel="stylesheet" href="./css/share.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="./css/pdhco.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/css/share.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/css/pdhco.css" type="text/css" media="screen" />
 <!--[if lte IE 8]>
-<link rel="stylesheet" href="./css/ie.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/css/ie.css" type="text/css" media="screen" />
 <![endif]-->
-<link rel="stylesheet" href="./css/jquery.tweet.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/css/jquery.tweet.css" type="text/css" media="screen" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8">
@@ -41,8 +41,8 @@ if (isset($_REQUEST['url']) && $_REQUEST['url'] != 'https://') {
 <meta name="revised" content="Gean Ramos, 19/04/2025" />
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="./js/jquery.tweet.js"></script>
-<script type="text/javascript" src="./js/ogre.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/js/jquery.tweet.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/js/ogre.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZBPFV014K"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -67,7 +67,8 @@ if (isset($_REQUEST['url']) && $_REQUEST['url'] != 'https://') {
 			<form method="post" action="" id="ninja">
 					<div class="left">
 						<p><label>URL:</label><input type="text" name="url" value="https://" onfocus="if (this.value == 'https://') this.value = '';" size="32" /></p>
-						<p><label>URL Customizada:</label><input type="text" name="keyword" size="10" /></p>
+						<p><label>Titulo:</label><input type="text" class="text" name="title" value="Pudim de leite" onfocus="if (this.value == 'Pudim de leite') this.value = '';" /></p>
+                        <p><label>URL Customizada:</label><input type="text" name="keyword" value="pudim" onfocus="if (this.value == 'pudim') this.value = '';" size="10" /></p>
 					</div>
 					<div class="right">
 						<input type="submit" id="enviar" value="Enviar" />
@@ -76,7 +77,7 @@ if (isset($_REQUEST['url']) && $_REQUEST['url'] != 'https://') {
 			<div id="top">
 				<p>*A url customizada é opcional. Com ela você pode customizar a cara do seu link.</p>
 				<p>Ao invés de seu link aparecer como <span>gean.me/EP1c</span> ele aparece como <span>gean.me/como-preferir</span>.</p>
-				<p><strong>Alguma dúvida em como utilizar o gean.me?</strong> Clique aqui e leia nosso <a href="http://pdh.co/faq" target="_top">FAQ</a> e conheça aqui nossos <a href="http://pdh.co/termos" target="_top">Termos de uso</a>. </p>
+				<p><strong>Alguma dúvida em como utilizar o gean.me?</strong> Clique aqui e leia nosso <a href="#faq" target="_top">FAQ</a> e conheça aqui nossos <a href="#termos" target="_top">Termos de uso</a>. </p>
 			</div>	
 <h2>Últimos tweets</h2>
 <div id="query" class="query"></div>
