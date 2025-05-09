@@ -50,11 +50,11 @@ div.share {
 #share_links a:hover {
 	background-position:2px center;
 }
-#share_tw {background:transparent url(https://web.archive.org/web/20131207063949im_/http://pdh.co/images/twitter.png) left center no-repeat;}
-#share_fb {background:transparent url(https://web.archive.org/web/20131207063949im_/http://pdh.co/images/facebook.png) left center no-repeat;}
-#share_ff {background:transparent url(https://web.archive.org/web/20131207063949im_/http://pdh.co/images/friendfeed.png) left center no-repeat;}
+#share_tw {background:transparent url(https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/img/twitter.png) left center no-repeat;}
+#share_fb {background:transparent url(https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/img/facebook.png) left center no-repeat;}
+#share_ff {background:transparent url(https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/img/friendfeed.png) left center no-repeat;}
 
 #copylink{
 	cursor:pointer;
-	background:transparent url(https://web.archive.org/web/20131207063949im_/http://pdh.co/images/copy.png) 130% center no-repeat;
+	background:transparent url(https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/img/copy.png) 130% center no-repeat;
 }
