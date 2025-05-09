@@ -1,7 +1,7 @@
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;/*! font: inherit; */vertical-align: baseline;}article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}
 
 body {
-	background: #37522c url(https://i1.wp.com/web.archive.org/web/20131115112730im_/http://pdh.co/images/bg.jpg) repeat;
+	background: #37522c url(https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/img/bg.jpg) repeat;
 	font-family: "Poppins", sans-serif;
 	font-style: normal;
 	font-size: 16px;
@@ -39,18 +39,18 @@ input {
 	height: 103px;
 }
 #header #logo {
-	background: url(https://i1.wp.com/web.archive.org/web/20131115112730im_/http://pdh.co/images/pdhco.png);
+	background: url(https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/img/pdhco.png);
 	width: 260px;
 	height: 103px;
 }
 #header #pdh {
-	background: url(https://i1.wp.com/web.archive.org/web/20131115112730im_/http://pdh.co/images/pdh.png);
+	background: url(https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/img/pdh.png);
 	width: 158px;
 	height: 55px;
 	margin-top: 24px;
 }
 #content {
-	background: url(https://i1.wp.com/web.archive.org/web/20131115112730im_/http://pdh.co/images/paper.jpg) repeat;
+	background: url(https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/img/paper.jpg) repeat;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -76,7 +76,7 @@ input {
 #content #ogro {
 	width: 310px;
 	height: 286px;
-	background: url(https://i1.wp.com/web.archive.org/web/20131115112730im_/http://pdh.co/images/ogro.png);
+	background: url(https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/img/ogro.png);
 }
 #content #top {
 	width: 350px;
@@ -137,12 +137,12 @@ input {
 	height: 103px;
 }
 #statheader #logo {
-	background: url(https://i1.wp.com/web.archive.org/web/20131115112730im_/http://pdh.co/images/logo.png);
+	background: url(https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/img/logo.png);
 	width: 260px;
 	height: 103px;
 }
 #statheader #pdh {
-	background: url(https://i1.wp.com/web.archive.org/web/20131115112730im_/http://pdh.co/images/pdh.png);
+	background: url(https://cdn.jsdelivr.net/gh/geanramos/18011975/migreme/img/pdh.png);
 	width: 158px;
 	height: 55px;
 	margin-top: 24px;
