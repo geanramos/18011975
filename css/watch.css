@@ -115,3 +115,48 @@ footer a {
   color: #DB9E34;
   text-decoration: none;
 }
+
+  /* style extras */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.css');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+  :root {
+    --plyr-color-main: #f03;
+  }
+
+  /* Botão de play central estilo YouTube */
+  .plyr__play-large {
+    width: auto;
+    height: auto;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Ícone branco no centro */
+  .plyr__play-large svg {
+    width: 28px;
+    height: 28px;
+    fill: #fff !important;
+  }
+
+  /* Efeito hover */
+  .plyr__play-large:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  /* Garante centralização absoluta se necessário */
+  .plyr--full-ui.plyr--video .plyr__play-large {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
