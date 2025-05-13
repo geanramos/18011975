@@ -115,10 +115,3 @@ footer a {
   color: #DB9E34;
   text-decoration: none;
 }
-.plyr--video .plyr__control:focus-visible,
-.plyr--video .plyr__control:hover,
-.plyr--video .plyr__control[aria-expanded=true] {background:#00b2ff;background:var(--plyr-video-control-background-hover,var(--plyr-color-main,var(--plyr-color-main,#f03)));color:#fff;color:var(--plyr-video-control-color-hover,#fff)}
-.plyr__control--overlaid {
-  background:#f03;
-  background:var(--plyr-video-control-background-hover,var(--plyr-color-main,var(--plyr-color-main,#f03)));
-}
