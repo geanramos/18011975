@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profissão Gestor de Tráfego</title>
+  <link rel="stylesheet" href="css/watch.css">
+<link rel="shortcut icon" href="https://www.youtube.com/s/desktop/08f2775a/img/logos/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://www.youtube.com/s/desktop/08f2775a/img/logos/favicon_32x32.png" sizes="32x32">
+<link rel="icon" href="https://www.youtube.com/s/desktop/08f2775a/img/logos/favicon_48x48.png" sizes="48x48">
+<link rel="icon" href="https://www.youtube.com/s/desktop/08f2775a/img/logos/favicon_96x96.png" sizes="96x96">
+<link rel="icon" href="https://www.youtube.com/s/desktop/08f2775a/img/logos/favicon_144x144.png" sizes="144x144">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZBPFV014K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TZBPFV014K', {
+    'cookie_domain': 'auto'
+  });
+</script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="https://i.imgur.com/Fz854KB.png" alt="Logo Profissão Gestor de Tráfego" class="logo">
+      <p class="data-evento">De 9 a 15 de maio</p>
+    </header>
+
+    <main>
+      <h1><span>APRENDA</span> <strong>COMO TER SUCESSO</strong> NA GESTÃO DE TRÁFEGO</h1>
+      <div class="video-container">
+        <iframe id="video" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <form class="formulario">
+        <p class="form-text">Inscreva-se agora para receber seu link por e-mail</p>
+        <input type="email" placeholder="Digite seu melhor e-mail" required>
+        <button type="submit">GARANTIR MEU LUGAR!</button>
+        <p class="privacidade">
+          Prometemos não usar nenhuma informação de contato para enviar qualquer tipo de SPAM. Os dados coletados são tratados nos termos da Lei Geral de Proteção de Dados e você pode se descadastrar da nossa lista a qualquer momento. Para mais informações, acesse nossa <a href="#">Política de Privacidade</a>
+        </p>
+      </form>
+    </main>
+
+    <footer>
+      <p>Copyright © 2004 - 2025 Gean Ramos.<br>
+      Todos os direitos reservados — <a href="#">Política de Privacidade</a></p>
+    </footer>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const videoId = urlParams.get('v') || 'xFxvRgoQJBM'; // fallback se não tiver vídeo
+    document.getElementById('video').src = `https://www.youtube.com/embed/${videoId}`;
+  </script>
+</body>
+</html>
