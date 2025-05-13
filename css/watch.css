@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   background: url('https://i.imgur.com/VWWBkaz.jpeg') no-repeat center center;
   color: #ffffff;
 }
@@ -95,7 +95,7 @@ button:hover {
   font-size: 12px;
   color: #ccc;
   margin-top: 10px;
-  font-family: Open Sans;
+  font-family: Open Sans, Arial, sans-serif;
 }
 
 .privacidade a {
