@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('https://i.imgur.com/VWWBkaz.jpeg') no-repeat center center;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.data-evento {
+  color: #d1d1d1;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+h1 {
+  font-size: 22px;
+  margin-top: 30px;
+  line-height: 1.4;
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+}
+
+h1 span {
+  font-weight: 400;
+}
+
+h1 strong {
+  color: #DB9E34;
+}
+
+.video-container {
+  margin: 20px 0;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #67D0F7;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.formulario {
+  margin-top: 30px;
+}
+
+.form-text {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: "Exo", sans-serif;
+  font-weight: 400;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #DB9E34;
+  color: #1A1E25;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+button:hover {
+  background-color: #67D0F7;
+}
+
+.privacidade {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 10px;
+  font-family: Open Sans;
+}
+
+.privacidade a {
+  color: #DB9E34;
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  font-size: 12px;
+  background-color: #0a0a0a;
+  color: #aaa;
+}
+
+footer a {
+  color: #DB9E34;
+  text-decoration: none;
+}
