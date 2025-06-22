@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Nome de Arquivo para GitHub Pages</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+        }
+        h1 {
+            color: #333;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #resultado {
+            margin-top: 30px;
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 1.1em;
+            color: #495057;
+            word-wrap: break-word; /* Garante que o texto quebre se for muito longo */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gerador de Nome de Arquivo</h1>
+        <p>Digite o título do seu post para convertê-lo no formato do GitHub Pages.</p>
+
+        <input type="text" id="inputTitulo" placeholder="Ex: Olá Mundo com Acentuação">
+
+        <button onclick="gerarNomeArquivo()">Gerar Nome</button>
+
+        <div id="resultado">O nome do arquivo aparecerá aqui...</div>
+    </div>
+
+    <script>
+        /**
+         * Função principal que gera o nome do arquivo formatado.
+         */
+        function gerarNomeArquivo() {
+            // 1. OBTER A DATA ATUAL
+            // Cria um novo objeto de data.
+            const hoje = new Date();
+
+            // Extrai o ano, mês e dia. O 'getMonth()' retorna de 0 a 11, por isso somamos 1.
+            // O 'padStart' garante que o mês e o dia tenham sempre dois dígitos (ex: 01, 02, ... 12).
+            const ano = hoje.getFullYear();
+            const mes = String(hoje.getMonth() + 1).padStart(2, '0');
+            const dia = String(hoje.getDate()).padStart(2, '0');
+
+            // Formata a data como "AAAA-MM-DD".
+            const dataFormatada = `${ano}-${mes}-${dia}`;
+
+            // 2. OBTER E TRANSFORMAR O TÍTULO
+            // Pega o valor digitado no campo de input.
+            const tituloOriginal = document.getElementById('inputTitulo').value;
+
+            // Transforma o título:
+            const tituloTransformado = tituloOriginal
+                .toLowerCase() // Converte para minúsculas.
+                .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // Remove acentos.
+                .replace(/ç/g, 'c') // Substitui 'ç' por 'c'.
+                .replace(/\s+/g, '-') // Substitui um ou mais espaços por um hífen.
+                .replace(/[^\w\-]/g, ''); // Remove caracteres não alfanuméricos exceto hífen.
+
+            // 3. JUNTAR TUDO E EXIBIR O RESULTADO
+            // Combina a data, o título e a extensão ".md".
+            // Verifica se o título não está vazio antes de adicionar o hífen inicial.
+            const nomeFinal = tituloTransformado
+                ? `${dataFormatada}-${tituloTransformado}.md`
+                : "Digite um título válido.";
+
+            // Mostra o resultado final na tela.
+            document.getElementById('resultado').innerText = nomeFinal;
+        }
+
+        // BÔNUS: Gerar o nome do arquivo enquanto o usuário digita.
+        // Adiciona um "ouvinte de evento" que chama a função sempre que uma tecla é liberada.
+        document.getElementById('inputTitulo').addEventListener('keyup', gerarNomeArquivo);
+
+    </script>
+
+</body>
+</html>
