@@ -69,7 +69,7 @@ h1{
 	width: 210px;
 	height: 32px;
 	text-indent: -999em;
-	background-image: url('../imagens/logo.png');
+	background-image: url('../imagens/logo.png?v=02');
 	background-size: 210px;
 	position: fixed;
 	top: 0px;
